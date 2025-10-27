@@ -1,0 +1,12 @@
+# Ignorar arquivos compilados
+*.o
+*.class
+
+# Ignorar arquivos temporários do editor
+*.swp
+*.tmp
+
+# Ignorar pastas inteiras
+node_modules/
+dist/
+.parcel-cache/
