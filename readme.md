@@ -20,7 +20,14 @@ Facilitar o processo de locação, aproximando proprietários e inquilinos de fo
 
 ---
 
-## Como executar o projeto
+##  Como executar o projeto
 1. Instale as dependências:
    ```bash
    npm install
+
+## Link do Artefato um 
+
+```
+https://docs.google.com/document/d/1uac0oaAKqngKzsj7luwk7_ve86ua9OmPbFDPNRM0EEw/edit?usp=sharing
+```
+   
