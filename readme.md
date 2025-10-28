@@ -31,3 +31,8 @@ Facilitar o processo de locação, aproximando proprietários e inquilinos de fo
 https://docs.google.com/document/d/1uac0oaAKqngKzsj7luwk7_ve86ua9OmPbFDPNRM0EEw/edit?usp=sharing
 ```
    
+## Link do Segundo Artefato de entrega
+
+```
+https://docs.google.com/document/d/12ycIVLA7WT_jX_8wlc5HfOLTpenrLCAlaX0TcFXOcjg/edit?tab=t.0
+```
