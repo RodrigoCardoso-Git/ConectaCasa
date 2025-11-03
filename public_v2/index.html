@@ -1,0 +1,100 @@
+<!-- arquivo: index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastro de Usuário — Formulário por Etapas</title>
+  <link rel="stylesheet" href="styles-explicado.css" />
+</head>
+<body>
+  <main class="layout-dividido">
+    <section class="lado-esquerdo com-imagem" aria-hidden="true"></section>
+
+    <section class="lado-direito">
+      <div class="card-formulario">
+        <h1 class="titulo-principal">Cadastro de Usuário</h1>
+
+        <!-- Radios para controle das etapas -->
+        <input type="radio" name="passo" id="passo1" checked hidden>
+        <input type="radio" name="passo" id="passo2" hidden>
+        <input type="radio" name="passo" id="passo3" hidden>
+        <input type="radio" name="passo" id="passo4" hidden>
+
+        <form id="formCadastroCompleto" class="formulario-multi-etapas" novalidate>
+          <!-- ETAPA 1 -->
+          <div class="etapa etapa-1">
+            <label for="campoNomeCompleto">Nome completo</label>
+            <input id="campoNomeCompleto" name="nomeCompleto" type="text" required placeholder="Ex: Maria Silva" />
+            <div class="controles-etapa">
+              <label for="passo2" class="botao proximo" id="btnEtapa1">Próximo →</label>
+            </div>
+          </div>
+
+          <!-- ETAPA 2 -->
+          <div class="etapa etapa-2">
+            <label for="campoEmail">Email</label>
+            <input id="campoEmail" name="email" type="email" required placeholder="seu@exemplo.com" />
+
+            <label for="campoSenha">Senha</label>
+            <input id="campoSenha" name="senha" type="password" required minlength="6" placeholder="Mínimo 6 caracteres" />
+
+            <div class="controles-etapa">
+              <label for="passo1" class="botao voltar">← Voltar</label>
+              <label for="passo3" class="botao proximo" id="btnEtapa2">Próximo →</label>
+            </div>
+          </div>
+
+          <!-- ETAPA 3 -->
+          <div class="etapa etapa-3">
+            <label for="campoCPF">CPF</label>
+            <input id="campoCPF" name="cpf" type="text" inputmode="numeric" maxlength="14" placeholder="000.000.000-00" />
+
+            <label for="campoTelefone">Telefone</label>
+            <input id="campoTelefone" name="telefone" type="tel" inputmode="tel" placeholder="(00) 9 0000-0000" />
+
+            <div class="controles-etapa">
+              <label for="passo2" class="botao voltar">← Voltar</label>
+              <label for="passo4" class="botao proximo" id="btnEtapa3">Próximo →</label>
+            </div>
+          </div>
+
+          <!-- ETAPA 4 -->
+          <div class="etapa etapa-4">
+            <label for="campoDataNascimento">Data de nascimento</label>
+            <input id="campoDataNascimento" name="dataNascimento" type="date" />
+
+            <label for="campoGenero">Gênero</label>
+            <select id="campoGenero" name="genero">
+              <option value="">Selecione</option>
+              <option value="feminino">Feminino</option>
+              <option value="masculino">Masculino</option>
+              <option value="nao_informar">Prefiro não informar</option>
+              <option value="outro">Outro</option>
+            </select>
+
+            <label for="campoLocalizacao">Localização (cidade, estado)</label>
+            <input id="campoLocalizacao" name="localizacao" type="text" placeholder="Ex: Fortaleza, CE" />
+
+            <div class="controles-etapa">
+              <label for="passo3" class="botao voltar">← Voltar</label>
+              <button type="submit" class="botao enviar">Enviar</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Mensagens de erro -->
+        <div id="mensagemErro" class="mensagem-erro"></div>
+
+        <div class="indicador-passos" aria-hidden="true">
+          <span class="indicador indicador-1"></span>
+          <span class="indicador indicador-2"></span>
+          <span class="indicador indicador-3"></span>
+          <span class="indicador indicador-4"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script-validacao.js"></script>
+</body>
+</html>
