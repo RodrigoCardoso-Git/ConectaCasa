@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectaCasa - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <form class="form-card">
+
+            <h2>ConectaCasa</h2>
+            <p class="subtitle">Preencha seus dados para continuar</p>
+
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="exemplo@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>CPF</label>
+                    <input type="text" placeholder="000.000.000-00" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Telefone</label>
+                    <input type="text" placeholder="(99) 99999-9999" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Data de nascimento</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Gênero</label>
+                    <select required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Prefiro não informar</option>
+                    </select>
+                </div>
+
+                <div class="input-group full">
+                    <label>Localização</label>
+                    <input type="text" placeholder="Cidade / Estado" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Cadastrar</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
