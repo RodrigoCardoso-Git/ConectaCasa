@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConectaCasa - Cadastro</title>
+    <title>ConectCasa - Cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 
         <form class="form-card">
 
-            <h2>ConectaCasa</h2>
+            <h2>ConectCasa</h2>
             <p class="subtitle">Preencha seus dados para continuar</p>
 
             <div class="form-grid">
@@ -56,6 +56,20 @@
                     <label>Localização</label>
                     <input type="text" placeholder="Cidade / Estado" required>
                 </div>
+
+                <!-- ✅ Campo de senha adicionado -->
+                <div class="input-group full">
+                    <label>Senha</label>
+                    <input 
+                        type="password"
+                        placeholder="Crie uma senha forte"
+                        required
+                        minlength="8"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+                        title="A senha deve conter no mínimo 8 caracteres, incluindo letra maiúscula, minúscula e número."
+                    >
+                </div>
+
             </div>
 
             <button type="submit" class="btn">Cadastrar</button>
